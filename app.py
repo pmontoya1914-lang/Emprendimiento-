@@ -3,7 +3,7 @@ print("Este cuestionario tiene como objetivo evaluar el nivel de madurez de un e
 print("Escala: 1 = No existe, 2 = Existe de manera informal, 3 = Existe parcialmente, 4 = Existe y funciona adecuadamente, 5 = Existe y está documentado\n")
 
 total_admin = 0
-
+import streamlit as st
 total_admin += st.selectbox("1. ¿Cuenta con estructura organizacional definida?", [1,2,3,4,5])
 total_admin += st.selectbox("2. ¿Están claros los roles y responsabilidades?", [1,2,3,4,5])
 total_admin += st.selectbox("3. ¿Existe un responsable de decisiones clave?", [1,2,3,4,5])
