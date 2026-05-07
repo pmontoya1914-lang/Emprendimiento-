@@ -1,6 +1,6 @@
 import streamlit as st
 st.title("DIAGNÓSTICO EMPRESARIAL - DÓNDE TE ENCUENTRAS HOY EN TU EMPRENDIMIENTO")
-st.write("Este cuestionario tiene como objetivo evaluar el nivel de madurez de un emprendimiento en seis áreas clave: legal, administrativa, comercial, financiera, técnica y ecológica. No existen respuestas correctas o incorrectas. Responde con honestidad para obtener un diagnóstico útil.")
+st.write("Este diagnóstico empresarial permite saber el nivel de desarrollo y madurez de tu emprendimiento en seis áreas clave: administrativa, comercial, financiera, técnica, ecológica y legal. No existen respuestas correctas o incorrectas. Responde con honestidad para obtener un diagnóstico útil.")
 st.write("Escala: 1 = No existe, 2 = Existe de manera informal, 3 = Existe parcialmente, 4 = Existe y funciona adecuadamente, 5 = Existe y está documentado\n")
 
 total_admin = 0
