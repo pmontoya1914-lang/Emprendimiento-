@@ -1,11 +1,11 @@
-print ("DIAGNÓSTICO EMPRESARIAL - ÁREA ADMINISTRATIVA/ORGANIZACIONAL")
-print ("Este cuestionario tiene como objetivo evaluar el nivel de madurez de un emprendimiento en seis áreas clave: legal, administrativa, comercial, financiera, técnica y ecológica. No existen respuestas correctas o incorrectas. Responde con honestidad para obtener un diagnóstico útil.")
-print ("Escala: 1 = No existe, 2 = Existe de manera informal, 3 = Existe parcialmente, 4 = Existe y funciona adecuadamente, 5 = Existe y está documentado\n")
+print("DIAGNÓSTICO EMPRESARIAL - ÁREA ADMINISTRATIVA/ORGANIZACIONAL")
+print("Este cuestionario tiene como objetivo evaluar el nivel de madurez de un emprendimiento en seis áreas clave: legal, administrativa, comercial, financiera, técnica y ecológica. No existen respuestas correctas o incorrectas. Responde con honestidad para obtener un diagnóstico útil.")
+print("Escala: 1 = No existe, 2 = Existe de manera informal, 3 = Existe parcialmente, 4 = Existe y funciona adecuadamente, 5 = Existe y está documentado\n")
 
 total_admin = 0
 
-total_admin += print ("1. ¿Cuenta con estructura organizacional definida?", [1,2,3,4,5])
-total_admin += print ("2. ¿Están claros los roles y responsabilidades?", [1,2,3,4,5])
+total_admin += print("1. ¿Cuenta con estructura organizacional definida?", [1,2,3,4,5])
+total_admin += print("2. ¿Están claros los roles y responsabilidades?", [1,2,3,4,5])
 total_admin += st.selectbox("3. ¿Existe un responsable de decisiones clave?", [1,2,3,4,5])
 total_admin += st.selectbox("4. ¿Los socios tienen funciones diferenciadas?", [1,2,3,4,5])
 total_admin += st.selectbox("5. ¿Las decisiones se documentan?", [1,2,3,4,5])
