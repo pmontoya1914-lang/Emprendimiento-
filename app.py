@@ -38,7 +38,6 @@ else:
     st.write("Nivel EXPERTO: estructura estratégico")
     
 st.write("\nDIAGNÓSTICO EMPRESARIAL - ÁREA COMERCIAL")
-st.write("Escala: 1 = No existe, 2 = Informal, 3 = Parcial, 4 = Funciona, 5 = Documentado\n")
 
 total_comercial = 0
 
@@ -75,7 +74,6 @@ else:
     st.write("Nivel EXPERTO: comercial estratégica")
     
 st.write("\nDIAGNÓSTICO EMPRESARIAL - ÁREA FINANCIERA")
-st.write("Escala: 1 = No existe, 2 = Informal, 3 = Parcial, 4 = Funciona, 5 = Documentado\n")
 
 total_financiera = 0
 
@@ -112,7 +110,6 @@ else:
     st.write("Nivel EXPERTO: financiera estratégica")
 
 st.write("\nDIAGNÓSTICO EMPRESARIAL - ÁREA TÉCNICA")
-st.write("Escala: 1 = No existe, 2 = Informal, 3 = Parcial, 4 = Funciona, 5 = Documentado\n")
 
 total_técnica = 0
 
@@ -144,7 +141,6 @@ else:
     st.write("Nivel EXPERTO: técnica estratégica")
 
 st.write("\nDIAGNÓSTICO EMPRESARIAL - ÁREA ECOLÓGICA")
-st.write("Escala: 1 = No existe, 2 = Informal, 3 = Parcial, 4 = Funciona, 5 = Documentado\n")
 
 total_ecológica = 0
 
@@ -171,7 +167,6 @@ else:
     st.write("Nivel EXPERTO: ecológica estratégica")
 
 st.write("\nDIAGNÓSTICO EMPRESARIAL - ÁREA LEGAL")
-st.write("Escala: 1 = No existe, 2 = Informal, 3 = Parcial, 4 = Funciona, 5 = Documentado\n")
 
 total_legal = 0
 
