@@ -268,3 +268,36 @@ elif total_legal <= 70:
    st.write("""En este nivel Avanzado, el negocio ha logrado establecer una estructura legal funcional que le permite operar con cumplimiento fiscal y normativo, así como con cierto nivel de control y organización. Cuenta con una figura legal adecuada, registros actualizados, emisión de facturación en la mayoría de sus operaciones y cumplimiento regular de sus obligaciones fiscales. Además, dispone de contratos formales con clientes y proveedores, así como acuerdos básicos entre socios que permiten una operación más ordenada. Sin embargo, aún existe oportunidad de evolucionar hacia una gestión legal más estratégica que fortalezca su capacidad de crecimiento. En términos prácticos, el negocio cuenta con una base jurídica sólida para operar, pero requiere optimización para escalar de manera más eficiente y segura.""")
 else:
     st.write("""En este nivel Experto, el negocio ha integrado su estructura legal como un componente estratégico que no solo le permite operar con cumplimiento total, sino también crecer, protegerse y consolidarse en el mercado. La figura legal está optimizada, las obligaciones fiscales se cumplen de manera consistente y sin errores, y existen contratos estandarizados que regulan adecuadamente las relaciones con socios, clientes y proveedores. Además, se identifican y gestionan riesgos legales de forma preventiva, se cuenta con asesoría jurídica constante y la estructura legal está diseñada para facilitar la expansión y la atracción de inversión. En términos prácticos, la dimensión legal deja de ser un requisito operativo y se convierte en una herramienta estratégica que impulsa el crecimiento, la estabilidad y la sostenibilidad del negocio en el largo plazo.""")
+
+import pandas as pd
+from datetime import datetime
+import os
+
+if st.button("Guardar diagnóstico"):
+    registro = {
+        "fecha": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "nombre": nombre,
+        "correo": correo,
+        "telefono": telefono,
+        "tipo_negocio": tipo_negocio,
+        "municipio": municipio,
+        "area_administrativa": total_admin,
+        "area_comercial": total_comercial,
+        "area_financiera": total_financiera,
+        "area_tecnica": total_tecnica,
+        "area_ecologica": total_ecologica,
+        "area_legal": total_legal
+    }
+
+    archivo = "base_diagnosticos.csv"
+
+    if os.path.exists(archivo):
+        df = pd.read_csv(archivo)
+        df = pd.concat([df, pd.DataFrame([registro])], ignore_index=True)
+    else:
+        df = pd.DataFrame([registro])
+
+    df.to_csv(archivo, index=False)
+
+    st.success("Diagnóstico guardado correctamente.")
+
