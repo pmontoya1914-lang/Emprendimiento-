@@ -55,81 +55,54 @@ total_comercial += st.selectbox("40. ¿La marca es reconocible en su mercado?", 
 
 st.write("\nPuntaje total área comercial:", total_comercial)
 
-if total_comercial <= 30:
-    st.write("Nivel PRINCIPIANTE: comercial necesidad")
-elif total_comercial <= 55:
-    st.write("Nivel INTERMEDIO: comercial oportunidad")
-elif total_comercial <= 70:
-    st.write("Nivel AVANZADO: comercial funcional")
-else:
-    st.write("Nivel EXPERTO: comercial estratégica")
-    
 st.write("\nDIAGNÓSTICO EMPRESARIAL - ÁREA FINANCIERA")
 
 total_financiera = 0
 
-total_financiera += st.selectbox("41. ¿Lleva registros financieros formales?", [1,2,3,4,5])
-total_financiera += st.selectbox("42. ¿Elabora estados financieros periódicos?", [1,2,3,4,5])
-total_financiera += st.selectbox("43. ¿Separa finanzas personales y del negocio?", [1,2,3,4,5])
-total_financiera += st.selectbox("44. ¿Conoce su flujo de efectivo mensual?", [1,2,3,4,5])
-total_financiera += st.selectbox("45. ¿Identifica ingresos y egresos claramente?", [1,2,3,4,5])
-total_financiera += st.selectbox("46. ¿El negocio es rentable actualmente?", [1,2,3,4,5])
-total_financiera += st.selectbox("47. ¿Conoce sus costos fijos y variables?", [1,2,3,4,5])
-total_financiera += st.selectbox("48. ¿Calcula su punto de equilibrio?", [1,2,3,4,5])
-total_financiera += st.selectbox("49. ¿Analiza márgenes de utilidad?", [1,2,3,4,5])
-total_financiera += st.selectbox("50. ¿Identifica fugas de dinero?", [1,2,3,4,5])
-total_financiera += st.selectbox("51. ¿Cuenta con liquidez suficiente?", [1,2,3,4,5])
-total_financiera += st.selectbox("52. ¿Ha utilizado financiamiento externo?", [1,2,3,4,5])
-total_financiera += st.selectbox("53. ¿Las deudas son manejables?", [1,2,3,4,5])
-total_financiera += st.selectbox("54. ¿Conoce el costo de su financiamiento?", [1,2,3,4,5])
-total_financiera += st.selectbox("55. ¿Tiene planeación para contingencias?", [1,2,3,4,5])
-total_financiera += st.selectbox("56. ¿Cuenta con proyecciones financieras?", [1,2,3,4,5])
-total_financiera += st.selectbox("57. ¿Analiza escenarios de crecimiento?", [1,2,3,4,5])
-total_financiera += st.selectbox("58. ¿Reinvierte utilidades en el negocio?", [1,2,3,4,5])
-total_financiera += st.selectbox("59. ¿Evalúa inversiones antes de ejecutarlas?", [1,2,3,4,5])
-total_financiera += st.selectbox("60. ¿Puede crecer sin comprometer estabilidad financiera?", [1,2,3,4,5])
+total_financiera += st.selectbox("41. ¿Lleva registros financieros formales?", [0,1,2,3,4,5])
+total_financiera += st.selectbox("42. ¿Elabora estados financieros periódicos?", [0,1,2,3,4,5])
+total_financiera += st.selectbox("43. ¿Separa finanzas personales y del negocio?", [0,1,2,3,4,5])
+total_financiera += st.selectbox("44. ¿Conoce su flujo de efectivo mensual?", [0,1,2,3,4,5])
+total_financiera += st.selectbox("45. ¿Identifica ingresos y egresos claramente?", [0,1,2,3,4,5])
+total_financiera += st.selectbox("46. ¿El negocio es rentable actualmente?", [0,1,2,3,4,5])
+total_financiera += st.selectbox("47. ¿Conoce sus costos fijos y variables?", [0,1,2,3,4,5])
+total_financiera += st.selectbox("48. ¿Calcula su punto de equilibrio?", [0,1,2,3,4,5])
+total_financiera += st.selectbox("49. ¿Analiza márgenes de utilidad?", [0,1,2,3,4,5])
+total_financiera += st.selectbox("50. ¿Identifica fugas de dinero?", [0,1,2,3,4,5])
+total_financiera += st.selectbox("51. ¿Cuenta con liquidez suficiente?", [0,1,2,3,4,5])
+total_financiera += st.selectbox("52. ¿Ha utilizado financiamiento externo?", [0,1,2,3,4,5])
+total_financiera += st.selectbox("53. ¿Las deudas son manejables?", [0,1,2,3,4,5])
+total_financiera += st.selectbox("54. ¿Conoce el costo de su financiamiento?", [0,1,2,3,4,5])
+total_financiera += st.selectbox("55. ¿Tiene planeación para contingencias?", [0,1,2,3,4,5])
+total_financiera += st.selectbox("56. ¿Cuenta con proyecciones financieras?", [0,1,2,3,4,5])
+total_financiera += st.selectbox("57. ¿Analiza escenarios de crecimiento?", [0,1,2,3,4,5])
+total_financiera += st.selectbox("58. ¿Reinvierte utilidades en el negocio?", [0,1,2,3,4,5])
+total_financiera += st.selectbox("59. ¿Evalúa inversiones antes de ejecutarlas?", [0,1,2,3,4,5])
+total_financiera += st.selectbox("60. ¿Puede crecer sin comprometer estabilidad financiera?", [0,1,2,3,4,5])
 
 st.write("\nPuntaje total área financiera:", total_financiera)
-
-if total_financiera <= 30:
-    st.write("Nivel PRINCIPIANTE: financiera necesidad")
-elif total_financiera <= 55:
-    st.write("Nivel INTERMEDIO: financiera oportunidad")
-elif total_financiera <= 70:
-    st.write("Nivel AVANZADO: financiera funcional")
-else:
-    st.write("Nivel EXPERTO: financiera estratégica")
 
 st.write("\nDIAGNÓSTICO EMPRESARIAL - ÁREA TÉCNICA")
 
 total_técnica = 0
 
-total_técnica += st.selectbox("61. ¿Domina técnicamente su producto o servicio?", [1,2,3,4,5])
-total_técnica += st.selectbox("62. ¿Tiene procesos técnicos definidos?", [1,2,3,4,5])
-total_técnica += st.selectbox("63. ¿La calidad es consistente?", [1,2,3,4,5])
-total_técnica += st.selectbox("64. ¿Cuenta con estándares de calidad?", [1,2,3,4,5])
-total_técnica += st.selectbox("65. ¿La operación depende de una persona clave?", [1,2,3,4,5])
-total_técnica += st.selectbox("66. ¿Utiliza tecnología adecuada?", [1,2,3,4,5])
-total_técnica += st.selectbox("67. ¿La infraestructura es suficiente?", [1,2,3,4,5])
-total_técnica += st.selectbox("68. ¿Existen cuellos de botella operativos?", [1,2,3,4,5])
-total_técnica += st.selectbox("69. ¿La operación es escalable?", [1,2,3,4,5])
-total_técnica += st.selectbox("70. ¿Aplica mejoras continuas?", [1,2,3,4,5])
-total_técnica += st.selectbox("71. ¿Documenta fallas operativas?", [1,2,3,4,5])
-total_técnica += st.selectbox("72. ¿Aplica acciones correctivas?", [1,2,3,4,5])
-total_técnica += st.selectbox("73. ¿La capacidad instalada cubre la demanda?", [1,2,3,4,5])
-total_técnica += st.selectbox("74. ¿Planea la operación a futuro?", [1,2,3,4,5])
-total_técnica += st.selectbox("75. ¿La operación es replicable?", [1,2,3,4,5])
+total_técnica += st.selectbox("61. ¿Domina técnicamente su producto o servicio?", [0,1,2,3,4,5])
+total_técnica += st.selectbox("62. ¿Tiene procesos técnicos definidos?", [0,1,2,3,4,5])
+total_técnica += st.selectbox("63. ¿La calidad es consistente?", [0,1,2,3,4,5])
+total_técnica += st.selectbox("64. ¿Cuenta con estándares de calidad?", [0,1,2,3,4,5])
+total_técnica += st.selectbox("65. ¿La operación depende de una persona clave?", [0,1,2,3,4,5])
+total_técnica += st.selectbox("66. ¿Utiliza tecnología adecuada?", [0,1,2,3,4,5])
+total_técnica += st.selectbox("67. ¿La infraestructura es suficiente?", [0,1,2,3,4,5])
+total_técnica += st.selectbox("68. ¿Existen cuellos de botella operativos?", [0,1,2,3,4,5])
+total_técnica += st.selectbox("69. ¿La operación es escalable?", [0,1,2,3,4,5])
+total_técnica += st.selectbox("70. ¿Aplica mejoras continuas?", [0,1,2,3,4,5])
+total_técnica += st.selectbox("71. ¿Documenta fallas operativas?", [0,1,2,3,4,5])
+total_técnica += st.selectbox("72. ¿Aplica acciones correctivas?", [0,1,2,3,4,5])
+total_técnica += st.selectbox("73. ¿La capacidad instalada cubre la demanda?", [0,1,2,3,4,5])
+total_técnica += st.selectbox("74. ¿Planea la operación a futuro?", [0,1,2,3,4,5])
+total_técnica += st.selectbox("75. ¿La operación es replicable?", [0,1,2,3,4,5])
 
 st.write("\nPuntaje total área técnica/operativa:", total_técnica)
-
-if total_técnica <= 22:
-    st.write("Nivel PRINCIPIANTE: técnica necesidad")
-elif total_técnica <= 41:
-    st.write("Nivel INTERMEDIO: técnica oportunidad")
-elif total_técnica <= 53:
-    st.write("Nivel AVANZADO: técnica funcional")
-else:
-    st.write("Nivel EXPERTO: técnica estratégica")
 
 st.write("\nDIAGNÓSTICO EMPRESARIAL - ÁREA ECOLÓGICA")
 
