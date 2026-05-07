@@ -4,8 +4,8 @@ print("Escala: 1 = No existe, 2 = Existe de manera informal, 3 = Existe parcialm
 
 total_admin = 0
 
-total_admin += int(input("1. ¿Cuenta con estructura organizacional definida?", [1,2,3,4,5])
-total_admin += int(input("2. ¿Están claros los roles y responsabilidades?", [1,2,3,4,5])
+total_admin += st.selectbox("1. ¿Cuenta con estructura organizacional definida?", [1,2,3,4,5])
+total_admin += st.selectbox("2. ¿Están claros los roles y responsabilidades?", [1,2,3,4,5])
 total_admin += st.selectbox("3. ¿Existe un responsable de decisiones clave?", [1,2,3,4,5])
 total_admin += st.selectbox("4. ¿Los socios tienen funciones diferenciadas?", [1,2,3,4,5])
 total_admin += st.selectbox("5. ¿Las decisiones se documentan?", [1,2,3,4,5])
