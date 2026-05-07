@@ -284,7 +284,7 @@ if st.button("Guardar diagnóstico"):
         "area_administrativa": total_admin,
         "area_comercial": total_comercial,
         "area_financiera": total_financiera,
-        "area_tecnica": total_tecnica,
+        "area_tecnica": total_técnica,
         "area_ecologica": total_ecologica,
         "area_legal": total_legal
     }
