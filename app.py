@@ -301,3 +301,9 @@ if st.button("Guardar diagnóstico"):
 
     st.success("Diagnóstico guardado correctamente.")
 
+with open("base_diagnosticos.csv", "rb") as file:
+    st.download_button(
+        label="Descargar base de datos",
+        data=file,
+        file_name="base_diagnosticos.csv",
+        mime="text/csv"
