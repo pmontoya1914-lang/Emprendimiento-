@@ -108,63 +108,45 @@ st.write("\nDIAGNÓSTICO EMPRESARIAL - ÁREA ECOLÓGICA")
 
 total_ecológica = 0
 
-total_ecológica += st.selectbox("76. ¿Identifica su impacto ambiental?", [1,2,3,4,5])
-total_ecológica += st.selectbox("77. ¿Minimiza el uso de recursos no renovables?", [1,2,3,4,5])
-total_ecológica += st.selectbox("78. ¿Gestiona adecuadamente sus residuos?", [1,2,3,4,5])
-total_ecológica += st.selectbox("79. ¿Promueve el uso responsable de insumos?", [1,2,3,4,5])
-total_ecológica += st.selectbox("80. ¿Cumple normativas ambientales aplicables?", [1,2,3,4,5])
-total_ecológica += st.selectbox("81. ¿Aplica prácticas de sostenibilidad?", [1,2,3,4,5])
-total_ecológica += st.selectbox("82. ¿Comunica su compromiso ambiental?", [1,2,3,4,5])
-total_ecológica += st.selectbox("83. ¿Busca eficiencia energética?", [1,2,3,4,5])
-total_ecológica += st.selectbox("84. ¿Evalúa impacto ecológico al crecer?", [1,2,3,4,5])
-total_ecológica += st.selectbox("85. ¿La sostenibilidad es parte de su estrategia?", [1,2,3,4,5])
+total_ecológica += st.selectbox("76. ¿Identifica su impacto ambiental?", [0,1,2,3,4,5])
+total_ecológica += st.selectbox("77. ¿Minimiza el uso de recursos no renovables?", [0,1,2,3,4,5])
+total_ecológica += st.selectbox("78. ¿Gestiona adecuadamente sus residuos?", [0,1,2,3,4,5])
+total_ecológica += st.selectbox("79. ¿Promueve el uso responsable de insumos?", [0,1,2,3,4,5])
+total_ecológica += st.selectbox("80. ¿Cumple normativas ambientales aplicables?", [0,1,2,3,4,5])
+total_ecológica += st.selectbox("81. ¿Aplica prácticas de sostenibilidad?", [0,1,2,3,4,5])
+total_ecológica += st.selectbox("82. ¿Comunica su compromiso ambiental?", [0,1,2,3,4,5])
+total_ecológica += st.selectbox("83. ¿Busca eficiencia energética?", [0,1,2,3,4,5])
+total_ecológica += st.selectbox("84. ¿Evalúa impacto ecológico al crecer?", [0,1,2,3,4,5])
+total_ecológica += st.selectbox("85. ¿La sostenibilidad es parte de su estrategia?", [0,1,2,3,4,5])
 
 st.write("\nPuntaje total área ecológica:", total_ecológica)
-
-if total_ecológica <= 15:
-    st.write("Nivel PRINCIPIANTE: ecológica necesidad")
-elif total_ecológica <= 27:
-    st.write("Nivel INTERMEDIO: ecológica oportunidad")
-elif total_ecológica <= 35:
-    st.write("Nivel AVANZADO: ecológica funcional")
-else:
-    st.write("Nivel EXPERTO: ecológica estratégica")
 
 st.write("\nDIAGNÓSTICO EMPRESARIAL - ÁREA LEGAL")
 
 total_legal = 0
 
-total_legal += st.selectbox("86. ¿El negocio está legalmente constituido?", [1,2,3,4,5])
-total_legal += st.selectbox("87. ¿Opera como persona física o moral acorde a su actividad?", [1,2,3,4,5])
-total_legal += st.selectbox("88. ¿La figura legal es congruente con el giro del negocio?", [1,2,3,4,5])
-total_legal += st.selectbox("89. ¿Cuenta con acta constitutiva vigente (si aplica)?", [1,2,3,4,5])
-total_legal += st.selectbox("90. ¿Los socios están correctamente registrados?", [1,2,3,4,5])
-total_legal += st.selectbox("91. ¿Está dado de alta ante el SAT?", [1,2,3,4,5])
-total_legal += st.selectbox("92. ¿El régimen fiscal corresponde a su actividad real?", [1,2,3,4,5])
-total_legal += st.selectbox("93. ¿Emite facturas por todos sus ingresos?", [1,2,3,4,5])
-total_legal += st.selectbox("94. ¿Presenta declaraciones fiscales en tiempo y forma?", [1,2,3,4,5])
-total_legal += st.selectbox("95. ¿Tiene adeudos fiscales pendientes?", [1,2,3,4,5])
-total_legal += st.selectbox("96. ¿Cuenta con contratos formales con proveedores?", [1,2,3,4,5])
-total_legal += st.selectbox("97. ¿Cuenta con contratos con clientes cuando es necesario?", [1,2,3,4,5])
-total_legal += st.selectbox("98. ¿Existen convenios o acuerdos entre socios?", [1,2,3,4,5])
-total_legal += st.selectbox("99. ¿Están definidas las responsabilidades legales de cada socio?", [1,2,3,4,5])
-total_legal += st.selectbox("100. ¿Existen cláusulas de salida o disolución?", [1,2,3,4,5])
-total_legal += st.selectbox("101. ¿Cuenta con licencias o permisos para operar?", [1,2,3,4,5])
-total_legal += st.selectbox("102. ¿Cumple con normativas aplicables?", [1,2,3,4,5])
-total_legal += st.selectbox("103. ¿Tiene identificados riesgos legales actuales?", [1,2,3,4,5])
-total_legal += st.selectbox("104. ¿Cuenta con asesoría legal de respaldo?", [1,2,3,4,5])
-total_legal += st.selectbox("105. ¿La estructura legal permite el crecimiento del negocio?", [1,2,3,4,5])
+total_legal += st.selectbox("86. ¿El negocio está legalmente constituido?", [0,1,2,3,4,5])
+total_legal += st.selectbox("87. ¿Opera como persona física o moral acorde a su actividad?", [0,1,2,3,4,5])
+total_legal += st.selectbox("88. ¿La figura legal es congruente con el giro del negocio?", [0,1,2,3,4,5])
+total_legal += st.selectbox("89. ¿Cuenta con acta constitutiva vigente (si aplica)?", [0,1,2,3,4,5])
+total_legal += st.selectbox("90. ¿Los socios están correctamente registrados?", [0,1,2,3,4,5])
+total_legal += st.selectbox("91. ¿Está dado de alta ante el SAT?", [0,1,2,3,4,5])
+total_legal += st.selectbox("92. ¿El régimen fiscal corresponde a su actividad real?", [0,1,2,3,4,5])
+total_legal += st.selectbox("93. ¿Emite facturas por todos sus ingresos?", [0,1,2,3,4,5])
+total_legal += st.selectbox("94. ¿Presenta declaraciones fiscales en tiempo y forma?", [0,1,2,3,4,5])
+total_legal += st.selectbox("95. ¿Tiene adeudos fiscales pendientes?", [0,1,2,3,4,5])
+total_legal += st.selectbox("96. ¿Cuenta con contratos formales con proveedores?", [0,1,2,3,4,5])
+total_legal += st.selectbox("97. ¿Cuenta con contratos con clientes cuando es necesario?", [0,1,2,3,4,5])
+total_legal += st.selectbox("98. ¿Existen convenios o acuerdos entre socios?", [0,1,2,3,4,5])
+total_legal += st.selectbox("99. ¿Están definidas las responsabilidades legales de cada socio?", [0,1,2,3,4,5])
+total_legal += st.selectbox("100. ¿Existen cláusulas de salida o disolución?", [0,1,2,3,4,5])
+total_legal += st.selectbox("101. ¿Cuenta con licencias o permisos para operar?", [0,1,2,3,4,5])
+total_legal += st.selectbox("102. ¿Cumple con normativas aplicables?", [0,1,2,3,4,5])
+total_legal += st.selectbox("103. ¿Tiene identificados riesgos legales actuales?", [0,1,2,3,4,5])
+total_legal += st.selectbox("104. ¿Cuenta con asesoría legal de respaldo?", [0,1,2,3,4,5])
+total_legal += st.selectbox("105. ¿La estructura legal permite el crecimiento del negocio?", [0,1,2,3,4,5])
 
 st.write("\nPuntaje total área legal:", total_legal)
-
-if total_legal <= 30:
-    st.write("Nivel PRINCIPIANTE: legal necesidad")
-elif total_legal <= 55:
-    st.write("Nivel INTERMEDIO: legal oportunidad")
-elif total_legal <= 70:
-    st.write("Nivel AVANZADO: legal funcional")
-else:
-    st.write("Nivel EXPERTO: legal estratégica")
 
 st.write("\nDIAGNÓSTICO EMPRESARIAL - RESUMEN")
 
