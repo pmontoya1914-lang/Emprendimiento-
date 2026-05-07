@@ -27,16 +27,7 @@ total_admin += st.selectbox("19. ¿Existe alta rotación de personal?", [0,1,2,3
 total_admin += st.selectbox("20. ¿El clima organizacional es favorable?", [0,1,2,3,4,5])
 
 st.write("\nPuntaje total área administrativa:", total_admin)
-
-if total_admin <= 30:
-    st.write("Nivel PRINCIPIANTE: estructura necesidad")
-elif total_admin <= 55:
-    st.write("Nivel INTERMEDIO: estructura oportunidad")
-elif total_admin <= 70:
-    st.write("Nivel AVANZADO: estructura funcional")
-else:
-    st.write("Nivel EXPERTO: estructura estratégico")
-    
+  
 st.write("\nDIAGNÓSTICO EMPRESARIAL - ÁREA COMERCIAL")
 
 total_comercial = 0
