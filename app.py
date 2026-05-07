@@ -306,4 +306,4 @@ with open("base_diagnosticos.csv", "rb") as file:
         label="Descargar base de datos",
         data=file,
         file_name="base_diagnosticos.csv",
-        mime="text/csv"
+        mime="text/csv")
